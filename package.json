@@ -1,0 +1,14 @@
+{
+  "name": "freelancer",
+  "version": "1.0.0",
+  "description": "Freelancer Website",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss:public/css"
+  },
+  "keywords": []
+}
