@@ -1,10 +1,11 @@
+@use 'utilities';
+@use 'variables';
 @use 'about';
 @use 'base';
-@use 'contact';
+@use 'contact'; 
 @use 'footer';
 @use 'header';
 @use 'home';
 @use 'mobile';
-@use 'utilities';
 @use 'project';
-@use 'variables';
+
