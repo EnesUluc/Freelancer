@@ -1,11 +1,53 @@
+@use 'variables';
+
 #home{
     // home section a
     &__a{
+        margin: 1rem;
+
         .skills{
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap: 1rem;
             margin-bottom: 2.5rem;
+
+            i{
+                padding-bottom: .5rem;
+            }
+        }
+    }
+
+    // home section b
+    &__b{
+        .profile{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin: 1.5rem 0;
+
+
+            li{
+                &.title{
+                    font-size: 1.2rem;
+                }
+                &.number{
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+
+            div{
+                padding: 2rem 0;
+                &:nth-child(odd){
+                    background-color: variables.$light-color;
+                }
+                &:nth-child(even){
+                    background-color: variables.$medium-color;
+                }
+            }
+        }
+
+        .profile:hover{
+            cursor: pointer;
         }
     }
 }
