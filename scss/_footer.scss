@@ -1,0 +1,27 @@
+@use 'variables';
+#main-footer{
+    background-color: variables.$dark-color;
+    color: #fff;
+    height: 5rem;
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .social .fab{
+            margin-right: .5rem;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            text-align: center;
+            padding: .5rem;
+            transition: all .6s;
+        }
+        .social .fab:hover{
+            cursor: pointer;
+            opacity: .6;
+        }
+
+    }
+}
