@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #fff;
+    background-color: variables.$bg-color;
     font-family: 'Prompt','sans-serif';
     line-height: 1.5;
 }
@@ -20,4 +20,7 @@ ul{
 }
 img{
     width: 100%;
+}
+p{
+    color: #fff;
 }

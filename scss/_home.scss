@@ -11,6 +11,10 @@
             gap: 1rem;
             margin-bottom: 2.5rem;
 
+            h3{
+                color:variables.$medium-color;
+                margin-bottom: .4rem;;
+            }
             i{
                 padding-bottom: .5rem;
             }
@@ -23,7 +27,7 @@
             display: grid;
             grid-template-columns: repeat(4,1fr);
             margin: 1.5rem 0;
-
+           
 
             li{
                 &.title{
@@ -36,19 +40,27 @@
             }
 
             div{
+                border-radius: 50%;
+                margin: 0 1rem;
                 padding: 2rem 0;
+
+
                 &:nth-child(odd){
                     background-color: variables.$light-color;
                 }
                 &:nth-child(even){
                     background-color: variables.$medium-color;
                 }
+
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            &:hover{
+                cursor: pointer;
             }
         }
 
-        .profile:hover{
-            cursor: pointer;
-        }
     }
 
     &__c{
@@ -58,8 +70,12 @@
         .timeline-item{
             margin: 1rem;
             text-align: center;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,variables.$purple-color 0px 8px 32px;
             padding: 1rem;
+
+            h3{
+                color: #0e91d8;
+            }
         }
         .timeline-item:hover{
             cursor: pointer;

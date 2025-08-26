@@ -30,12 +30,18 @@
         color: #fff;
         background-color: variables.$dark-color;
     }
+    &-purple{
+        @extend %btn-shared;
+        color: #fff;
+        background-color: variables.$purple-color;
+    }
 }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover{
-    background-color: variables.$primary-color;
+    background-color: variables.$yellow-color;
+    color: variables.$purple-color;
 }
 
 // background
@@ -73,13 +79,13 @@ input[class^='btn-']:hover{
         margin: 1rem 0;
     }
     &-1{
+        margin: 1.5rem 0;
+    }
+    &-1{
         margin: 2rem 0;
     }
     &-1{
         margin: 3rem 0;
-    }
-    &-1{
-        margin: 4rem 0;
     }
 }
 
@@ -93,6 +99,7 @@ input[class^='btn-']:hover{
     font-size: 2rem;
     padding-bottom: 1rem;
     text-transform: uppercase;
+    color:#FAEB92;
 }
 
 // border-bottom

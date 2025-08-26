@@ -18,17 +18,17 @@
 
             a{
                 text-decoration: none;
-                color: #fff;
+                color: variables.$yellow-color;
                 text-transform: uppercase;
                 border-bottom: 3px transparent solid;
                 padding-bottom: .5rem;
                 transition: border-color .5s;
 
                 &:hover{
-                    border-color: variables.$medium-color;
+                    border-color: variables.$purple-color;
                 }
                 &.active{
-                    border-color: variables.$primary-color;
+                    border-color: #fff;
                 }
             }
         }
