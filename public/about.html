@@ -10,7 +10,10 @@
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    />
+    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+  
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
     <!-- header -->
@@ -29,7 +32,7 @@
         </div>
      </header>
 
-    <!-- section a -->
+    <!-- section a - About Me-->
      <section id="about-a" class="text-center py-2">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -50,7 +53,7 @@
         </div>
      </section>
 
-     <!-- section b -->
+     <!-- section b - Skills-->
       <section id="about-b" class="bg-dark py-3 text-center">
         <div class="container">
             <h2 class="section-title">What I know...</h2>
@@ -81,6 +84,71 @@
             
         </div>
       </section>
+
+      <!-- section c - Tools-->
+       <section id="about-c" class="bg-transient py-2">
+            <div class="container">
+                <h2 class="section-title text-center">Tools</h2>
+                <div class="border-bottom"></div>
+                <div class="about-logos">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg" />
+                </div>
+            </div>
+       </section>
+
+       <!-- section d -->
+        <section id="about-d" class="bg-dark py-2">
+            <div class="container">
+                <h2 class="section-title text-center">Values and Principles</h2>
+                <div class="border-bottom"></div>
+                <p class="lead text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, id.</p>
+                <div class="references owl-carousel owl-theme">
+                    <div>
+                        <ul>
+                           
+                            <li>Mission</li>
+                        </ul>
+                        <p>To develop user-friendly, modern, and scalable web projects.</p>
+                    </div>
+                           
+                    <div>
+                        <ul>
+                            <li>Vision</li>
+                        </ul>
+                        <p>To provide high-quality services to global clients, add value to every collaboration, and take my projects to the next level.</p>
+                    </div>
+                             
+                    <div>
+                        <ul>
+                           
+                            <li>Motivation</li>
+                        </ul>
+                        <p>Continuously improving myself, creating innovative solutions, and staying relevant in a fast-changing world.</p>
+                    </div>
+           
+                    <div>
+                        <ul>
+                          
+                            <li>Goals</li>
+                        </ul>
+                        <p>To reach my best potential in every field, while building long-lasting friendships and strong professional partnerships.</p>
+                    </div>
+            
+                    <div>
+                        <ul>
+                           
+                            <li>Values</li>
+                        </ul>
+                        <p>Honesty, Transparent Communication, Timeliness, and Commitment to Quality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     <footer id="main-footer">
         <div class="footer-content container">
             <p>Copyright &copy; 2025. All Rights Reserved.</p>
@@ -91,5 +159,26 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            autoplay: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
 </body>
 </html>

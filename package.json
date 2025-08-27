@@ -10,5 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "sass --watch --style=compressed scss:public/css"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
 }

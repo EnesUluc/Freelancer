@@ -55,6 +55,9 @@ input[class^='btn-']:hover{
     &-light{
         background-color: variables.$light-color;
     }
+    &-transient{
+        background: linear-gradient(45deg,variables.$yellow-color,variables.$purple-color,variables.$medium-color,variables.$yellow-color);
+    }
 }
 
 // padding
@@ -97,7 +100,7 @@ input[class^='btn-']:hover{
 // section-title
 .section-title{
     font-size: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     text-transform: uppercase;
     color:#FAEB92;
 }
