@@ -9,6 +9,7 @@
     &__logo{
         width: 70px;
         height: 70px;
+        border-radius: 50%;
     }
     &__items{
         display: flex;
@@ -34,6 +35,8 @@
         }
     }
 }
+
+
 #header{
     &__home{
         background: variables.$bg-image no-repeat center right / cover;
@@ -51,6 +54,11 @@
         .typewrite{
             display: block;
         }
+    }
+    &__inner{
+         background: variables.$bg-image no-repeat 40% 20% / cover;
+         height: 6rem;
+         border-bottom: 3px solid variables.$purple-color;
     }
     
 }
