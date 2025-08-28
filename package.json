@@ -12,6 +12,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "lightbox2": "^2.11.5",
     "owl.carousel": "^2.3.4"
   }
 }

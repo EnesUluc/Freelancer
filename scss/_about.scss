@@ -73,12 +73,14 @@
                 margin-bottom: 1rem;
                 li{
                     color: variables.$primary-color;
-                    text-align: center;
                 }
             }
-            p{
+            .box{
+                height: 160px;
                 border: 1px solid variables.$purple-color;
                 border-radius: 15px;
+            }
+            p{
                 padding: .8rem;
             }
             img{
