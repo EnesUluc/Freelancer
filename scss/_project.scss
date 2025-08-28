@@ -1,5 +1,14 @@
 @use 'variables';
 
+#projects{
+    .section-title{
+        margin-bottom: .4rem;
+    }
+    .lead{
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+}
 .items{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -14,6 +23,26 @@
         background-color: variables.$dark-color;
         position: relative;
         overflow: hidden;
+       
+        .item__image{
+            height: 320px;
+            a{
+                height: 100%;
+            }
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .item__text{
+            height: 120px;
+            padding: .5rem;
+        }
+
+      
+        &:hover{
+            cursor: pointer;
+        }
 
         &::after{
             content: '';
@@ -29,7 +58,12 @@
             transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         &:hover::after{
-            transform: scale(2) translateX(-50%) translateY(-50%) rotate(45deg);
+            transform: scale(2) translateX(-40%) translateY(-40%) rotate(45deg);
+        }
+        &__text{
+            &__wrap{
+                padding: .5rem;
+            }
         }
     }
 }
