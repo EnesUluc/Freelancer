@@ -35,6 +35,16 @@
         color: #fff;
         background-color: variables.$purple-color;
     }
+    &-transient{
+         @extend %btn-shared;
+         color: #000;
+         border: 1px solid #000;
+         background: linear-gradient(30deg,variables.$yellow-color,variables.$purple-color,variables.$light-color, variables.$purple-color,variables.$yellow-color);
+         
+    }
+    &-transient:hover{
+         background: linear-gradient(30deg,variables.$purple-color,variables.$yellow-color,variables.$light-color,variables.$yellow-color, variables.$purple-color);
+    }
 }
 
 button[class^='btn-']:hover,
@@ -57,6 +67,9 @@ input[class^='btn-']:hover{
     }
     &-transient{
         background: linear-gradient(45deg,variables.$yellow-color,variables.$purple-color,variables.$medium-color,variables.$yellow-color);
+    }
+    &-transient-contact{
+        background: linear-gradient(30deg,variables.$purple-color,variables.$yellow-color,variables.$light-color,variables.$yellow-color, variables.$purple-color);
     }
 }
 
