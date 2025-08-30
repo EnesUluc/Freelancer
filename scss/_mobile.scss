@@ -1,0 +1,173 @@
+@use 'variables';
+@media(max-width:768px){
+    html{
+        font-size: 12px;
+    }
+
+    .main-nav{
+        &__logo{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    #header{
+        &__home{
+            height: 60vh;
+
+            .header-content{
+                padding-top: 7rem;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+     html{
+        font-size: 10px;
+    }
+    .main-nav{
+        &__logo{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    #home{
+        &__a{
+            .skills{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        &__b{
+            .profile{
+                 grid-template-columns: repeat(2,1fr);
+                 gap: 1.2rem;
+                 margin: 2rem 1rem;
+            }
+        }
+    }
+    #projects{
+        .items{
+            grid-template-columns: repeat(2,1fr);
+            .item__text__wrap{
+                padding: 2.5rem;
+            }
+        }
+    }
+    #header{
+        &__home{
+            height: 40vh;
+            .header-content{
+                padding-top: 6rem;
+            }
+        }
+        &__inner{
+            height: 10rem;
+        }
+    }
+    #about{
+        &-d{
+            .references{
+                .box{
+                    height: 90px;
+                }
+                p{
+                    padding: .6rem;
+                }
+            }
+             
+        }
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 9px;
+    }
+    .main-nav{
+        flex-direction: column;
+        align-items: center;
+        li{
+            padding: 1rem;
+        }
+
+    }
+    #home{
+        &__a{
+            .skills{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        &__b{
+            .profile{
+                grid-template-columns: repeat(1,1fr);
+                justify-self: center;
+                div{
+                    width: 20rem;
+                 }
+            }
+        }
+    }
+    #about{
+        &-a{
+            .info{
+                grid-template-columns: repeat(1,1fr);
+                align-items: center;
+                justify-items: center;
+                &__image{
+                    padding: .3rem;
+                    height: 20rem;
+                    width: 20rem;
+                }
+                &__bio{
+                    height: 20rem;
+                    width: 20rem;
+                }
+
+            }
+        }
+        &-c{
+            .about-logos{
+                grid-template-columns: repeat(3,1fr);
+                gap: 2rem;
+                justify-self: center;
+            }
+        }
+
+    }
+    #projects{
+        .items{
+            grid-template-columns: repeat(1,1fr);
+            gap: 4rem;
+            .item__text__wrap{
+                padding: 4rem;
+            }
+            .item__image{
+                height: 240px;
+                text-align: center;
+            }
+        }
+    }
+    #main-footer{
+        height: 8rem;
+        padding: 10px;
+        .footer-content{
+            flex-direction: column;
+        }
+    }
+    #contact{
+        &-a{
+            .form-fields{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &-b{
+            .contact-info{
+                grid-template-columns: repeat(1,1fr);
+                gap: 2rem;
+            }
+        }
+    }
+    .contact{
+        height: 500px;
+    }
+}

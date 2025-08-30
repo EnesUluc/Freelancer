@@ -53,7 +53,10 @@
                 }
 
                 &:hover{
-                    opacity: 0.8;
+                    transition-duration: .6s;
+                    border-radius: 4px;
+                    background-color: variables.$purple-color;
+                    border: 1px solid variables.$yellow-color;
                 }
             }
             &:hover{
@@ -70,8 +73,16 @@
         .timeline-item{
             margin: 1rem;
             text-align: center;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,variables.$purple-color 0px 8px 32px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,variables.$purple-color 0px 4px 16px;
+            opacity: .6;
             padding: 1rem;
+
+
+            &:hover{
+                transition-duration: .6s;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,variables.$purple-color 0px 8px 32px;
+                opacity: 1;
+            }
 
             h3{
                 color: #0e91d8;
